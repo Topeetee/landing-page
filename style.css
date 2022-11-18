@@ -1,0 +1,315 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#btn-btn{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1px 2px rgba(0,0,0.25);
+    padding: 1rem;
+}
+.loo{
+    font-weight: 700;
+    color:rgb(73, 35, 109);
+    font-size: 1.2rem;
+    top: 6px;
+}
+nav-bar{
+    margin-top: 0.5rem;
+}
+li{
+    text-decoration: none;
+    display: inline-block;
+    align-self: baseline;
+    margin-top: 0.5rem;
+}
+a{
+    text-decoration: none;
+    margin-right: 1.5em;
+    color: black;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    transition: 4s ease-in-out;
+}
+a:hover{
+    text-decoration: underline blueviolet;
+}
+.btn-nav{
+border: none;
+border-radius: 4px;
+width: 6rem;
+height: 2.5rem;
+background: red;
+font-weight: 600;
+color: white;
+cursor: pointer;
+transition: 4s ease out;
+}
+.btn-nav:hover{
+    opacity: 0.65;
+}
+.header{
+    background: #b19083;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 2em;
+    padding: 2em;
+}
+.desc{
+    margin-top: 8rem;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.img:hover{
+    transform: rotate(30deg);
+}
+h1{
+    font-size:5rem;
+    color:rgb(73, 35, 109);
+}
+.p-desc{
+    line-height: 1.2;
+    margin-top: 1rem;
+    color:rgb(73, 35, 109);
+    margin-bottom: 2rem;
+}
+.desc-btn{
+    border: none;
+    border-radius: 4px;
+    width:7.5rem;
+    height:2.8rem;
+    color: white;
+    background: red;
+    font-weight: 600;
+    transition: 1s ease;
+    cursor: pointer;
+    position: relative;
+}
+.arrow-right{
+    position: absolute;
+    font-size: 1.2rem;
+    margin-left: 2px;
+    margin-top: -2px;
+    font-weight: 500;
+}
+.desc-btn:hover{
+    width: 8rem;
+}
+.desc-btn:hover .arrow-right{
+    transform: translateX(20%);
+}
+.img-desc{
+    width: 30rem;
+    height: 30rem;
+    background: blueviolet;
+}
+.cad{
+    margin-top: 3em;
+}
+
+.h1-cad{
+    text-align: center;
+}
+.p-cad-cad{
+    text-align: center;
+    color:  #b19083;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.p2-cad{
+    text-align: center;
+}
+.header-cad{
+    display: block;
+    justify-self: center;
+    align-content: center;
+    width: 45%;
+    margin: 0 auto 5em auto;
+}
+.con-cad-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con-sign{
+    color: rgb(73, 35, 109);
+    font-size: 50px;
+}
+.con-h1-cad{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(73, 35, 109);
+}
+.p-cad{
+    color:  #b19083;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 8em;
+}
+.p2-cad{
+    color:  #b19083;
+    font-weight: 300;
+
+}
+.h1-cad{
+    color: rgb(73, 35, 109);
+    font-size: 50px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+.con-cad{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50vh;   
+}
+.con-cad-div{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 23em;
+    top:1em;
+    margin-left: 2.5rem;
+    height: 12em;
+}
+.grid-3{
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 1.5em;
+    margin-bottom: 10   px;
+    color: blueviolet;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    transition: 4s ease-in-out;
+}
+.div1{
+    height: 10rem;
+    width: 35rem;
+    margin-bottom: 5rem; 
+    padding-left: 2px;
+}
+.ind-div{
+    margin-left: 1rem;
+
+}
+.left-h{
+    color:rgb(73, 35, 109);
+    margin-bottom: 10px;
+}
+.left-p{
+    color:  #b19083;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px ;
+}
+
+@media only screen and (max-width: 769px){
+    nav-bar{
+        margin-top: 0.3rem;
+    }
+    li a {
+        font-size: 0.8rem;
+    }
+    .desc h1{
+        font-size:3rem;
+        color:rgb(73, 35, 109);
+    }
+    .p-cad-cad{
+        font-size: 1.2rem;
+    }
+    .h1-cad{
+        font-size: 2rem;
+    }
+    .p2-cad{
+        font-size: 1rem;
+    }
+    .con-cad-div{
+        width: 12rem;
+        column-count: 2;
+        gap: 10%;
+
+    }
+    .con-h1-ca{
+        font-size: 1.1rem;
+        margin-bottom: -.2rem;
+    }
+    .con-cad-p{
+        font-size: .9rem;
+    }
+    .p-cad{
+        color:  #b19083;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-left: 8em;
+        font-size: .8rem;
+    }
+    .p2-cad{
+        font-size: .8rem;
+    }
+}
+
+
+@media only screen and (max-width: 390px){
+    nav{
+        color: white;
+    }
+    .nav-bar{
+        width: 8rem;
+        z-index: 99;
+        background-color: #b19083;
+        display: none;
+    }
+    .active{
+        display: block;
+
+    }
+    .header{
+        position: relative;
+    }
+    .desc{
+        margin-top: 2rem;
+        }
+    .desc h1{
+        font-size: 2rem;
+    }
+    .p-desc{
+        overflow: hidden;
+    }
+    .desc-btn{
+        width:5.5rem;
+        height:2rem;
+        color: white;
+        font-weight: 500;
+        position: absolute;
+    }
+    .btn-nav {
+        width:5.5rem;
+        height:2rem;
+        color: white;
+        font-weight: 500;
+    }
+    .con-cad{
+        grid-template-columns: 1fr;
+        margin-bottom: 4rem;
+        text-align: center;
+        margin-left: 13%;
+    }
+    
+}
